@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="StoreAndKioskStatus.Views.DisplayCustomers"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StoreAndKioskStatus.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+      
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+         
+        </Grid.RowDefinitions>
+        <Label x:Name="lblShowCustomerList" Content="Customer List"
+                FontSize="20"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                VerticalContentAlignment="Top"
+                Margin="20,20,0,20"/>
+
+        <Label HorizontalAlignment="Left"
+                VerticalContentAlignment="Bottom"
+                Margin="20,20,0,20">
+            <Hyperlink NavigateUri="CustomerInput.xaml"
+                FontSize="15"
+                FontWeight="Bold">
+                Add a new customer
+            </Hyperlink>
+        </Label>
+
+
+    </Grid>
+</UserControl>
